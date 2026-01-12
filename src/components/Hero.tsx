@@ -81,7 +81,7 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <span className="section-label">Student Developer</span>
+              <span className="section-label">UI/UX Developer</span>
             </motion.div>
 
             <motion.h1
@@ -113,7 +113,7 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
             >
-              A 16-year-old student passionate about programming and building
+              A 17-year-old student passionate about programming and building
               innovative digital solutions. Always learning, always creating.
             </motion.p>
 
