@@ -2,11 +2,11 @@ import { motion } from "framer-motion";
 
 const Footer = () => {
   return (
-    <footer className="py-8 bg-foreground text-background border-t border-background/10">
+    <footer className="py-8 bg-black text-white border-t border-white/10">
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <motion.p
-            className="text-background/50 text-sm"
+            className="text-white/50 text-sm"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
@@ -22,7 +22,7 @@ const Footer = () => {
           >
             <a
               href="#"
-              className="text-background/50 hover:text-primary transition-colors text-sm"
+              className="text-white/50 hover:text-primary transition-colors text-sm"
             >
               Back to top ↑
             </a>

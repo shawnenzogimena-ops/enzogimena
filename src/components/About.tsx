@@ -16,7 +16,7 @@ const skillCategories = [
   },
   {
     title: "Learning",
-    skills: ["Algorithms", "Data Structures", "Web APIs", "Design Patterns", "3D Objects"],
+    skills: ["Algorithms", "Data Structures", "Web APIs", "Design Patterns", "3D Model"],
   },
 ];
 
@@ -50,7 +50,7 @@ const About = () => {
 
             <div className="space-y-6 text-muted-foreground leading-relaxed">
               <p>
-                I'm Shawn Enzo J. Gimena, a 16-year-old student with a passion for
+                I'm Shawn Enzo J. Gimena, a 17-year-old student with a passion for
                 programming and technology. I started my coding journey a few years
                 ago and haven't looked back since.
               </p>
@@ -120,7 +120,7 @@ const About = () => {
                 key={i}
                 className="text-6xl md:text-8xl lg:text-9xl font-display font-bold text-foreground/10 mx-8"
               >
-               SHAWN ENZO GIMENA
+                SHAWN ENZO GIMENA
               </span>
             ))}
           </div>

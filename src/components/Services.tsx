@@ -76,23 +76,39 @@ const Services = () => {
   return (
     <section id="services" className="py-24 lg:py-32 relative">
       <div className="container mx-auto px-6">
-        <motion.div
-          ref={headerRef}
-          className="max-w-2xl mb-16"
-          initial={{ opacity: 0, y: 30 }}
-          animate={isHeaderInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6 }}
-        >
-          <span className="section-label mb-4 block">(Services)</span>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-6">
-            What I Do
-          </h2>
-          <p className="text-lg text-muted-foreground leading-relaxed">
-            As a passionate young developer, I'm dedicated to learning and building
-            projects that solve real problems. I love experimenting with new
-            technologies and creating things that make a difference.
-          </p>
-        </motion.div>
+        {/* Header with image behind text */}
+        <div className="relative mb-16">
+          {/* Background image - positioned behind text, consistent across all devices */}
+          <motion.div
+            className="absolute left-[30%] sm:left-[45%] top-0 bottom-0 w-[240px] z-0 opacity-80 flex items-center"
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={isHeaderInView ? { opacity: 0.8, scale: 1 } : {}}
+            transition={{ duration: 0.8, delay: 0.1 }}
+          >
+            <img 
+              
+            />
+          </motion.div>
+
+          {/* Text content - on top of image */}
+          <motion.div
+            ref={headerRef}
+            className="relative z-10 max-w-2xl"
+            initial={{ opacity: 0, y: 30 }}
+            animate={isHeaderInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.6 }}
+          >
+            <span className="section-label mb-4 block">(Services)</span>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-6">
+              What I Do
+            </h2>
+            <p className="text-lg text-muted-foreground leading-relaxed max-w-lg">
+              As a passionate young developer, I'm dedicated to learning and building
+              projects that solve real problems. I love experimenting with new
+              technologies and creating things that make a difference.
+            </p>
+          </motion.div>
+        </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => (
