@@ -24,7 +24,7 @@ function PorscheModel({ isDarkMode, isMobile }: { isDarkMode: boolean; isMobile:
 
   useFrame((_, delta) => {
     if (modelRef.current) {
-      modelRef.current.rotation.y += delta * 0.5;
+      modelRef.current.rotation.y += delta * 0.15;
     }
   });
 
