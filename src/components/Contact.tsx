@@ -18,8 +18,8 @@ const socialLinks = [
   {
     icon: Instagram,
     label: "Instagram",
-    href: "https://instagram.com/enzogimena.shawn",
-    username: "@enzogimena.shawn",
+    href: "https://instagram.com/enzoc4nrawr",
+    username: "@enzocanrawr",
   },
   {
     icon: Facebook,
